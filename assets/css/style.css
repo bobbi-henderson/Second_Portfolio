@@ -1,0 +1,20 @@
+#footer {
+    background-color: rgb(185, 248, 248);
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    padding-top: 1em;
+}
+
+.copy {
+    text-align: center;
+    color: gray;
+}
+
+.fab, .fas{
+    color: rgb(0, 140, 255);
+}
+
+/* #about, #exp, #portfolio {
+    height: 500px;
+} */
