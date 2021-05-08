@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bobbi Henderson</title>
 
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/6bab3c972e.js" crossorigin="anonymous"></script>
@@ -27,51 +28,71 @@
             <a class="nav-link" href="#footer">Contact</a>
           </li>
       </nav>
-      <div class="container" id="about">
-        <h4>About Me</h4>
-      </div>
-      <div class="container" id="exp">
-        <h4>Experience</h4>
-      </div>
-      <div class="container" id="portfolio">
-        <h4>Portfolio</h4>
-      </div>
-    
-    <footer id="footer">
-        <div class="container" id="contact">
-          <div class="row">
-            <section class="col-7">
-              <h4>Get in touch</h4>
-              <form name=”EmailForm” method="POST" data-netlify="true" id="simple-contact-form" class="contact-form" >
-                  <div class="form-row">
-                    <div class="form-group col-6">
-                      <input class="form-control" type="text" name="name" id="name" placeholder="Name" />
-                    </div>
-                    <div class="form-group col-6">
-                      <input class="form-control" type="email" name="email" id="email" placeholder="Email" />
-                    </div>
-                  </div>
-                  <div class="form-row">
-                    <div class="col">
-                      <textarea class="form-control pb-5"  name="message" id="message" placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                  <input class="mt-2 btn btn-outline-primary" type="submit" value="Submit" class="primary"/>
-              </form>
-          </section>
-          <section class='col-5'> 
-              <h4>Follow me</h4>
-              <div class="icons pt-2">
-                  <a href="https://twitter.com/BobbiLHenderson"><i class="fab fa-twitter-square fa-2x"></i></a>
-                  <a href="https://github.com/bobbi-henderson"><i class="fab fa-github-square fa-2x"></i></a>
-                  <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+
+      <main class="content pb-5">
+        <div id="body">
+          <div class="container" id="about">
+            <h4>About Me</h4>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3 imageHolder">
+                  <img src="images/headshot 2.jpg" id="profile" class="img-fluid align-middle">
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <p>
+                    I am a Full Stack Software Developer located in the Minneapolis/St. Paul area. I have been writing code for almost two years, and I have a passion for creative problem solving. My current proficiencies include HTML, CSS, Bootstrap, Tailwind CSS, Javascript, Node.Js, MongoDB, and React. I have also previously worked with Python. My dream is to help marginalized communities through the power of code. What dream do you have for your company? I would love to develop a software solution to help you achieve it!
+                  </p>
+                </div>
               </div>
-              <p class="pt-2">Not a fan of forms? Email me at <a href="mailto:bobbilhenderson@gmail.com">bobbilhenderson@gmail.com</a>.</p>
-          </section>
+            </div>
           </div>
-          <p class="copy">&copy; Bobbi Henderson</p>
+          <div class="container" id="exp">
+            <h4>Experience</h4>
+          </div>
+          <div class="container" id="portfolio">
+            <h4>Portfolio</h4>
+          </div>
         </div>
-    </footer>
+        
+        <footer id="footer">
+          <div class="container" id="contact">
+            <div class="row">
+              <section class="col-12 col-sm-7">
+                <h4>Get in touch</h4>
+                <form name=”EmailForm” method="POST" data-netlify="true" id="simple-contact-form" class="contact-form" >
+                    <div class="form-row">
+                      <div class="form-group col-6">
+                        <input class="form-control" type="text" name="name" id="name" placeholder="Name" />
+                      </div>
+                      <div class="form-group col-6">
+                        <input class="form-control" type="email" name="email" id="email" placeholder="Email" />
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col">
+                        <textarea class="form-control pb-5"  name="message" id="message" placeholder="Message"></textarea>
+                      </div>
+                    </div>
+                    <input class="mt-2 btn btn-outline-primary" type="submit" value="Submit" class="primary"/>
+                </form>
+            </section>
+            <section class='col-12 col-sm-5'> 
+                <h4>Follow me</h4>
+                <div class="icons pt-2">
+                    <a href="https://twitter.com/BobbiLHenderson"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="https://github.com/bobbi-henderson"><i class="fab fa-github-square fa-2x"></i></a>
+                    <a href=""><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+                <p class="pt-2">Not a fan of forms? Email me at <a href="mailto:bobbilhenderson@gmail.com">bobbilhenderson@gmail.com</a>.</p>
+            </section>
+            </div>
+            <p class="copy m-0">&copy; 2021 Bobbi Henderson</p>
+          </div>
+      </footer>
+    </main>
+
+    
+
 
     
     <script src="index.js"></script>
