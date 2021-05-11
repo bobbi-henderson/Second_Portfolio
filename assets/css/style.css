@@ -40,11 +40,74 @@ h4 {
     border-radius: 10%;
 }
 
+.project {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 15em;
+    margin-bottom: 2em;
+
+}
+
+.project a img {
+    display: block;
+    object-fit: cover;
+    height: 15em;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.project-content {
+    position: relative;
+    transition: .3s;
+    box-shadow: 10px 20px 20px rbga(0,0,0,0.8);
+}
+
+.project-content .text-content,
+.project-content::after {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.project-content:after{
+    content: '';
+    display: block;
+    background-color: gray;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0;
+    transform: rotate3d(-1,1,0,100deg);
+    transition: .4s;
+    border-radius: 15px;
+}
+
+.project-content:hover:after {
+    opacity: .8;
+    transform: rotate3d(0,0,0,0deg);
+}
+
+.text-content {
+    top: 45%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%,-30%);
+    transition: .3s;
+    text-align: center;
+    color: #fff;
+}
+
+.project-content:hover .text-content{
+    opacity: 1;
+    transform: translate(0, -50%);
+}
+
 .copy {
     text-align: center;
     color: gray;
     font-size: small;
-
 }
 
 .fab, .fas{
@@ -52,8 +115,7 @@ h4 {
 }
 
 #exp, #portfolio {
-    background-color: bisque;
-    height: 550px;
+
 }
 
 @media screen and (max-width: 475px){
