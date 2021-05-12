@@ -1,11 +1,15 @@
 body {
     font-family: 'Zilla Slab', serif;
     font-weight: 500;
-    
+    background-color: rgba(250, 243, 243, .5);
 }
 
 h4 {
     font-weight: 600;
+}
+
+.container {
+    display: block;
 }
 
 .content {
@@ -14,12 +18,21 @@ h4 {
 }
 
 .imageHolder {
+    text-align: end;
+}
+
+.clipart {
     text-align: center;
 }
 
 #body {
     padding-bottom: 20em;
 }
+
+/* #about .container .row .col-sm-4,
+#about .container .row{
+    max-height: 25em;
+} */
 
 #footer {
     background-color: rgb(185, 248, 248);
@@ -38,6 +51,7 @@ h4 {
 
 #profile {
     border-radius: 10%;
+    max-height: 300px;
 }
 
 .project {
@@ -51,7 +65,7 @@ h4 {
 
 }
 
-.project a img {
+.project img {
     display: block;
     object-fit: cover;
     height: 15em;
@@ -75,7 +89,6 @@ h4 {
 .project-content:after{
     content: '';
     display: block;
-    background-color: gray;
     top: 0px;
     bottom: 0px;
     opacity: 0;
@@ -84,8 +97,22 @@ h4 {
     border-radius: 15px;
 }
 
+.project:nth-child(1) .project-content:after{
+    background-color: rgb(250, 135, 154);
+}
+
+.project:nth-child(2) .project-content:after{
+    background-color: #7252cc;
+}
+
+
+.project:nth-child(3) .project-content:after{
+    background-color: #5ea2d6;
+}
+
+
 .project-content:hover:after {
-    opacity: .8;
+    opacity: .85;
     transform: rotate3d(0,0,0,0deg);
 }
 
@@ -97,6 +124,7 @@ h4 {
     transition: .3s;
     text-align: center;
     color: #fff;
+    font-size: x-large;
 }
 
 .project-content:hover .text-content{
@@ -126,6 +154,8 @@ h4 {
     #footer {
         height: 27em;
     }
+
+
     
 }
 @media screen and (max-width: 575px){
@@ -136,5 +166,18 @@ h4 {
     #footer {
         height: 25em;
     }
-    
+
+
+}
+
+@media screen and (max-width: 769px){
+    .imageHolder {
+        text-align: center;
+    }
+
+    div.col-md-4 p {
+        padding-top: 2.5em;
+    }
+
+
 }
