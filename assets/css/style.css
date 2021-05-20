@@ -6,10 +6,32 @@ body {
 
 h4 {
     font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.col h5 {
+    color: #007bff;
+    text-align: start;
 }
 
 .container {
     display: block;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar-toggler {
+    color: #007bff;
+}
+
+#navbar {
+    background-color: rgb(185, 248, 248);
+}
+
+.header-logo {
+    height: 325px;
 }
 
 .content {
@@ -17,8 +39,22 @@ h4 {
     min-height: 100vh;
 }
 
-.imageHolder {
-    text-align: end;
+.imageHolder, .header-home {
+    text-align: center;
+}
+
+.header-home {
+    font-size: x-large;
+}
+
+.change, .col-md-5 h4 {
+    color:rgb(117, 214, 38);
+    text-align: center;
+}
+
+.date {
+    font-size: small;
+    color: gray;
 }
 
 .clipart {
@@ -27,12 +63,24 @@ h4 {
 
 #body {
     padding-bottom: 20em;
+    padding-top: 5em;
 }
 
-/* #about .container .row .col-sm-4,
-#about .container .row{
-    max-height: 25em;
-} */
+.exp-container .container {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.here:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid rgb(117, 214, 38);
+    transform: translate(-50%);
+}
 
 #footer {
     background-color: rgb(185, 248, 248);
@@ -178,6 +226,5 @@ h4 {
     div.col-md-4 p {
         padding-top: 2.5em;
     }
-
-
 }
+
