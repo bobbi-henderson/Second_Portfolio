@@ -116,7 +116,7 @@ h4 {
 .project img {
     display: block;
     object-fit: cover;
-    height: 15em;
+    height: 14.5em;
     width: 100%;
     border-radius: 15px;
 }
@@ -158,6 +158,19 @@ h4 {
     background-color: #5ea2d6;
 }
 
+.project:nth-child(4) .project-content:after{
+    background-color: rgb(250, 135, 154);
+}
+
+.project:nth-child(5) .project-content:after{
+    background-color: #7252cc;
+}
+
+
+.project:nth-child(6) .project-content:after{
+    background-color: #5ea2d6;
+}
+
 
 .project-content:hover:after {
     opacity: .85;
@@ -178,6 +191,13 @@ h4 {
 .project-content:hover .text-content{
     opacity: 1;
     transform: translate(0, -50%);
+}
+
+.brand {
+    border: 1px solid #25D3A4;
+    border-radius: 16px;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .copy {
@@ -215,7 +235,9 @@ h4 {
         height: 25em;
     }
 
-
+    .project-content > img {
+        width: 400px;
+    }
 }
 
 @media screen and (max-width: 769px){
